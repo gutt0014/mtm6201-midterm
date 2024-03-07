@@ -1,0 +1,36 @@
+/* Global Styles */
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: bold;
+    margin: 0 auto
+}
+
+/* Styling the global container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+/* Removing bullet points and underline from nav list */
+.nav ul {
+    list-style: none;
+}
+
+.nav a {
+    text-decoration: none;
+}
