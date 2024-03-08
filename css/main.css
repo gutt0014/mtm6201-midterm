@@ -14,9 +14,35 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
     font-weight: bold;
     margin: 0 auto
+}
+
+/* Proportionate font sizes to eachother: www.modularscale.com */
+h1 {
+    font-size: 47.776px;
+}
+
+h2 {
+    font-size: 39.813px;
+}
+
+h3 {
+    font-size: 33.178px;
+}
+
+h4 {
+    font-size: 27.648px;
+}
+
+h5 {
+    font-size: 23.04px;
+}
+
+p {
+    margin: 0 auto;
 }
 
 /* Styling the global container */
@@ -79,3 +105,103 @@ h4 {
     padding-right: 20px;
     color: #F53838; 
 }
+
+/* Styling banner */
+.banner {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.banner img {
+    flex: 1; 
+    max-width: 100%; 
+}
+
+.banner-content {
+    flex: 1; 
+    padding: 0 20px; 
+}
+
+.banner p {
+    padding-top: 10px;
+}
+
+.banner button {
+    margin-top: 20px; 
+}
+
+.gs-button{
+    background-color: #F53838; 
+    border: 2px solid #F53838; 
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #FFF; 
+}
+
+/* Putting icons in one row using flex */
+.uls-icons {
+    display: flex;
+    align-items: center;
+    
+}
+
+.uls-icons div {
+    display: flex;
+    flex-direction: column; 
+    margin-right: auto;
+}
+
+.uls-icons img {
+    width: 50px; 
+    height: auto; 
+    margin-right: 2%;
+    margin-left: 8%;
+}
+
+/* Styling Features Div */
+.features {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    margin: 4%;
+}
+
+.features img {
+    max-width: 100%; 
+    margin-right: 4%;
+}
+
+.features-content {
+    flex: 1; 
+    padding: 0 20px;
+}
+
+.features p {
+    padding-top: 10px;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0; 
+}
+
+.features ul li {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 10px; 
+}
+
+.features ul li img {
+    margin-right: 10px; 
+}
+
+
+
+
+
+
