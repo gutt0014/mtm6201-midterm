@@ -1,8 +1,8 @@
 /* Global Styles */
 html {
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
     box-sizing: border-box;
+    background-color: #f3e7e7;
 }
 
 body {
@@ -80,7 +80,7 @@ p {
 
 /* Adjusting the margin to add space between the logo and the navigation */
 .nav img {
-    margin-right: 300px; 
+    margin-right: 250px; 
 }
 
 /* Adjusting the margin to add space between "Help" and "Sign In" */
@@ -100,19 +100,15 @@ p {
     background-color: transparent; 
     border: 2px solid #F53838; 
     border-radius: 20px;
-    padding: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 5px 20px;
     color: #F53838; 
 }
 
 /* Styling banner */
 .banner {
     display: flex;
-    flex-direction: row; 
     align-items: center; 
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 0;
 }
 
 .banner img {
@@ -137,9 +133,7 @@ p {
     background-color: #F53838; 
     border: 2px solid #F53838; 
     border-radius: 10px;
-    padding: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 10px 40px;
     color: #FFF; 
 }
 
@@ -166,7 +160,6 @@ p {
 /* Styling Features Div */
 .features {
     display: flex;
-    flex-direction: row; 
     align-items: center; 
     margin: 4%;
 }
@@ -200,8 +193,101 @@ p {
     margin-right: 10px; 
 }
 
+/* Styling Choose your plan section */
+.plans {
+    text-align: center; 
+}
 
+.plan-info {
+    margin-bottom: 20px; 
+}
 
+.plan-cards {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    margin-bottom: 50px;
+}
 
+.plan-card {
+    width: fit-content; 
+    margin: 10px; 
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+.plan-card:hover {
+    border: 2px solid #F53838;
+}
 
+.plan-card p {
+    margin-top: auto; 
+    font-weight: bold;
+}
+
+.plan-cards ul li {
+    list-style: none;
+    text-align: justify;
+}
+
+.select-button {
+    background-color: transparent; 
+    border: 2px solid #F53838; 
+    border-radius: 20px;
+    padding: 5px 20px;
+    color: #F53838; 
+}
+
+.select-button:hover {
+    color: #FFF;
+    background-color: #F53838;
+}
+
+/* styling network section */
+.network {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.network h2,
+.network p {
+    margin-bottom: 20px; 
+}
+
+.network img {
+    margin-top: 40px; 
+}
+
+/* Footer Styling */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #f3e7e7;
+}
+
+.footer > div {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer img {
+    max-width: 100%;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
