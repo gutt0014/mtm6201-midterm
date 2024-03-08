@@ -34,3 +34,48 @@ h4 {
 .nav a {
     text-decoration: none;
 }
+
+/* Styling nav to the top of the page */
+.nav {
+    display: flex;
+    align-items: center; 
+}
+
+.nav nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav nav ul li {
+    margin-right: 20px; 
+}
+
+/* Adjusting the margin to add space between the logo and the navigation */
+.nav img {
+    margin-right: 300px; 
+}
+
+/* Adjusting the margin to add space between "Help" and "Sign In" */
+.nav nav ul li:nth-child(5) {
+    margin-right: 200px; 
+}
+
+/* Styling Sign In & Sign Up buttons */
+.si-button{
+    background-color: transparent;
+    border: none; 
+    color: black; 
+    margin-right: 20px; 
+}
+
+.su-button{
+    background-color: transparent; 
+    border: 2px solid #F53838; 
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #F53838; 
+}
