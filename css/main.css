@@ -1,14 +1,7 @@
 /* Global Styles */
 html {
     font-family: 'Open Sans', sans-serif;
-    box-sizing: border-box;
     background-color: #fff; 
-}
-
-body {
-    line-height: 1.5;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 h1,
@@ -49,7 +42,7 @@ p {
 
 /* Styling the global container */
 .container {
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 1em;
 }
@@ -61,6 +54,12 @@ p {
 
 .nav a {
     text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.nav a:hover {
+    color: #F53838; 
 }
 
 /* Styling nav to the top of the page */
@@ -71,23 +70,23 @@ p {
 
 .nav nav ul {
     display: flex;
-    margin: 0;
-    padding: 0;
     list-style: none;
+    justify-content: space-between;
 }
 
 .nav nav ul li {
-    margin-right: 20px; 
+    margin-right: 50px; 
 }
 
 /* Adjusting the margin to add space between the logo and the navigation */
 .nav img {
-    margin-right: 250px; 
+    margin-right: 180px; 
+    margin-left: 20px;
 }
 
 /* Adjusting the margin to add space between "Help" and "Sign In" */
 .nav nav ul li:nth-child(5) {
-    margin-right: 200px; 
+    margin-right: 130px; 
 }
 
 /* Styling Sign In & Sign Up buttons */
@@ -95,7 +94,7 @@ p {
     background-color: transparent;
     border: none; 
     color: black; 
-    margin-right: 20px; 
+
 }
 
 .su-button{
@@ -163,6 +162,7 @@ p {
     padding: 20px;
     background-color: #FFF;
     box-shadow: 0 5px 10px #c1c1c1;
+    border-radius: 10px;
 }
 
 .uls-icons div {
@@ -183,6 +183,9 @@ p {
     display: flex;
     align-items: center; 
     margin: 4%;
+    background-color: #f4f4f4;
+    margin: 0 auto;
+    border-radius: 5px;
 }
 
 .features img {
@@ -217,6 +220,7 @@ p {
 /* Styling Choose your plan section */
 .plans {
     text-align: center; 
+    margin-top: 100px;
 }
 
 .plan-info {
@@ -234,8 +238,8 @@ p {
     width: fit-content; 
     margin: 10px; 
     padding: 20px;
-    box-sizing: border-box;
     border: 1px solid #ccc;
+    border-radius: 5px;
     text-align: center; 
     display: flex;
     flex-direction: column;
@@ -307,6 +311,7 @@ p {
     display: flex;
     flex-direction: column; 
     border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .profile {
@@ -353,6 +358,7 @@ p {
 .subscribe {
     background-color: #FFF;
     box-shadow: 0 10px 10px #c1c1c1;
+    border-radius: 10px;
 }
 
 .subscribe p {
@@ -390,9 +396,10 @@ p {
 .footer {
     display: flex;
     justify-content: space-between; 
-    padding: 50px; 
-    margin-top: 5px;
+    padding: 50px;
+    margin: 5px auto;
     background-color: #f4f4f4;
+    border-radius: 5px;
 }
 
 .footer p,
