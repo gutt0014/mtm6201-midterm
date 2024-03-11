@@ -59,7 +59,7 @@ p {
 }
 
 .nav a:hover {
-    color: #F53838; 
+    color: #DA0B0B; 
 }
 
 /* Styling nav to the top of the page */
@@ -99,18 +99,18 @@ p {
 
 .su-button{
     background-color: transparent; 
-    border: 2px solid #F53838; 
+    border: 2px solid #DA0B0B;  
     border-radius: 20px;
     padding: 5px 20px;
-    color: #F53838; 
+    color: #DA0B0B; 
 }
 
 .si-button:hover {
-    color: #F53838; 
+    color: #DA0B0B;  
 }
 
 .su-button:hover {
-    background-color: #F53838;
+    background-color: #DA0B0B; 
     color: #FFF;
 }
 
@@ -147,12 +147,12 @@ p {
 }
 
 .gs-button{
-    background-color: #F53838; 
-    border: 2px solid #F53838; 
+    background-color: #DA0B0B; 
+    border: 2px solid #DA0B0B; 
     border-radius: 10px;
     padding: 10px 40px;
     color: #FFF; 
-    box-shadow: 0 5px 15px #F53838;
+    box-shadow: 0 5px 15px #DA0B0B; 
 }
 
 /* Putting icons in one row using flex */
@@ -247,7 +247,7 @@ p {
 }
 
 .plan-card:hover {
-    border: 2px solid #F53838;
+    border: 2px solid #DA0B0B; 
 }
 
 .plan-card p {
@@ -262,15 +262,15 @@ p {
 
 .select-button {
     background-color: transparent; 
-    border: 2px solid #F53838; 
+    border: 2px solid #DA0B0B; 
     border-radius: 20px;
     padding: 5px 20px;
-    color: #F53838; 
+    color: #DA0B0B; 
 }
 
 .select-button:hover {
     color: #FFF;
-    background-color: #F53838;
+    background-color: #DA0B0B; 
 }
 
 /* styling network section */
@@ -294,7 +294,8 @@ p {
 /* Styling Testimonials */
 .testimonial-heading {
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 40px;
+    padding-top: 50px;
 }
 
 .testimonial-card h5 {
@@ -302,48 +303,42 @@ p {
 }
 
 .testimonial-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-    gap: 20px; 
-}
-
-.testimonial-card {
     display: flex;
-    flex-direction: column; 
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
+    justify-content: space-between; 
+    gap: 10px;
+  }
+  
+  .testimonial-card {
+    width: 500px;
+    padding-bottom: 100px;
+  }
+  
+  .testimonial-card img .profile {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .testimonial-card .card-content {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    height: 200px;
+  }
 
-.profile {
-    width: 50px;
-    height: 50px;
-    padding: 10px;
-}
 
-.testimonial-card p {
-    margin: 5px 0;
-    text-align: center;
-}
-
-.testimonial-foot {
-    display: flex;
-    justify-content: center; /* Center the images horizontally */
-    align-items: center; 
-}
-.testimonial-foot img:nth-child(1) {
-    width: 50px;
-}
-
-.testimonial-foot img:nth-child(2) {
-    width: 30px;
-    height: 30px;
-    padding-left: 1000px;
-}
-
-.testimonial-foot img:nth-child(3) {
-    width: 70px;
-    height: 70px;
-}
+  .testimonial-card .card-content:hover {
+    border: 1px solid #DA0B0B;
+  }
+  
+  .testimonial-card h4,
+  .testimonial-card h5 {
+    margin: 0;
+  }
+  
+  .testimonial-card .testimonial-info p {
+    margin-top: 10px;
+  }
 
 /* Subscribe Section Stylling */
 .subscribe {
@@ -378,9 +373,9 @@ p {
 }
 
 .sub-button {
-    background-color: #F53838; 
+    background-color: #DA0B0B;
     color: #FFF; 
-    border: 2px solid #F53838; 
+    border: 2px solid #DA0B0B; 
     border-radius: 10px;
     padding: 10px 40px; 
     width: auto; 
@@ -388,7 +383,7 @@ p {
 }
 
 .sub-button:hover {
-    color: #F53838;
+    color: #DA0B0B; 
     background-color: #FFF;
 }
 
