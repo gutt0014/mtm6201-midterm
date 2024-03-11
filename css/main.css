@@ -2,7 +2,7 @@
 html {
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
-    background-color: #f7f7f7; 
+    background-color: #fff; 
 }
 
 body {
@@ -160,7 +160,9 @@ p {
 .uls-icons {
     display: flex;
     align-items: center;
-    background-color: #fbf6f6;
+    padding: 20px;
+    background-color: #FFF;
+    box-shadow: 0 5px 10px #c1c1c1;
 }
 
 .uls-icons div {
@@ -340,6 +342,8 @@ p {
 
 /* Subscribe Section Stylling */
 .subscribe {
+    max-width: 1000px;
+    margin-left: 80px;
     display: grid;
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1fr auto;
@@ -347,7 +351,8 @@ p {
 }
 
 .subscribe {
-    background-color: #fbf6f6;
+    background-color: #FFF;
+    box-shadow: 0 10px 10px #c1c1c1;
 }
 
 .subscribe p {
@@ -365,7 +370,6 @@ p {
     justify-self: center;
     margin-top: 100px;
 }
-
 
 .sub-button {
     background-color: #F53838; 
@@ -386,8 +390,9 @@ p {
 .footer {
     display: flex;
     justify-content: space-between; 
-    padding: 20px; 
-    margin-top: 200px;
+    padding: 50px; 
+    margin-top: 5px;
+    background-color: #f4f4f4;
 }
 
 .footer p,
