@@ -48,13 +48,13 @@ p {
     padding: 5px;
     z-index: 1000;
     text-decoration: none;
-  }
+}
 
 
 .skip-link:focus {
     top: 0;
-  }
-  
+}
+
 /* Styling the global container */
 .container {
     max-width: 1200px;
@@ -88,10 +88,13 @@ p {
     align-items: center;
 }
 
+.nav nav {
+    display: flex;
+}
+
 .nav nav ul {
     display: flex;
     list-style: none;
-    justify-content: space-between;
 }
 
 .nav nav ul li {
@@ -102,11 +105,6 @@ p {
 .nav img {
     margin-right: 180px;
     margin-left: 20px;
-}
-
-/* Adjusting the margin to add space between "Help" and "Sign In" */
-.nav nav ul li:nth-child(5) {
-    margin-right: 110px;
 }
 
 /* Styling Sign In & Sign Up buttons */
@@ -506,6 +504,7 @@ p {
     border-radius: 10px;
     box-shadow: 0 0 10px #c1c1c1
 }
+
 dl {
     margin-top: 30px;
 }
@@ -520,37 +519,30 @@ dd {
     margin-bottom: 20px;
 }
 
-.vpnfeatures {
-    margin: 100px;
-}
-
-.vpnfeatures img {
+.featureslist img {
     max-width: 50%;
     border-radius: 5px;
+    padding-left: 25%;
 }
 
-
-
-
-
-/* Add media query for smaller screen sizes */
+/* CSS for smaller screens */
 @media only screen and (max-width: 768px) {
 
-    /* Adjust font sizes */
+    /* Adjusting global font sizes */
     h1 {
         font-size: 32px;
     }
 
     h2 {
-        font-size: 26px;
+        font-size: 28px;
     }
 
     h3 {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     h4 {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     h5 {
@@ -561,141 +553,99 @@ dd {
         font-size: 14px;
     }
 
-    /* Adjust margins and paddings */
+    /* Adjusting margins */
+    .container {
+        padding: 0.5em;
+    }
+
+    /* Adjusting nav */
     .nav img {
-        margin-right: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
-    .nav nav {
-        display: none;
-        width: 100%;
-        text-align: center;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: #fff;
-        z-index: 1;
-    }
-
-    .nav nav ul {
-        padding: 0;
-        margin: 0;
-    }
-
-    .nav nav ul li {
-        margin: 10px 0;
-    }
-
-    .nav nav {
-        display: flex;
+    .nav ul {
+        flex-direction: column;
         align-items: center;
     }
 
-    .nav nav ul {
-        list-style: none;
-        display: flex;
-        margin-left: auto;
+    .nav ul li {
+        margin: 10px 0;
     }
 
     .nav nav ul li {
-        margin-right: 10px;
+        margin-right: 0;
     }
 
-    .nav nav ul li:nth-child(5) {
-        margin-right: 100px;
+    .nav {
+        flex-direction: column;
+        align-items: center;
     }
 
-
-    .nav a {
-        text-decoration: none;
-        color: black;
-        font-size: 18px;
-    }
-
-    .nav a:hover {
-        color: #DA0B0B;
-    }
-
-    /* Adjust banner content */
+    /* Adjusting banner */
     .banner {
         flex-direction: column;
-        text-align: center;
         padding: 50px 0;
     }
 
     .banner img {
         max-width: 80%;
-        margin: 20px auto;
     }
 
     .banner-content {
-        padding: 0 20px;
+        padding: 20px;
     }
 
-    /* Adjust features section */
+    /* Adjusting network images */
+    .network img {
+        max-width: 100%;
+    }
+
+    /* Adjusting features */
     .features {
         flex-direction: column;
     }
 
     .features img {
         max-width: 80%;
-        margin: 20px auto;
+        margin-bottom: 20px;
     }
 
-    /* Adjust plan cards */
+    /* Adjusting plan cards */
     .plan-card {
-        width: 80%;
+        width: 90%;
         margin: 10px auto;
     }
 
-    /* Adjust testimonial cards */
-    .testimonial-card {
-        width: 80%;
+    /* Adjusting testimonial section */
+    .testimonial-card .card-content {
+        padding: 20px;
+        background-color: #f4f4f4;
+        border-radius: 10px;
+        height: 300px;
     }
 
-    /* Adjust subscribe section */
+    /* Adjusting subscribe section */
     .subscribe {
         grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
     }
 
     .sub-button {
-        margin-top: 20px;
+        grid-column: 1;
+        grid-row: 3;
+        margin-top: 0;
+        margin-bottom: 20px;
     }
 
-    /* Footer adjustments */
+    /* Adjusting footer */
     .footer {
         flex-direction: column;
         padding: 20px;
     }
 
-    .footer-links {
-        margin-bottom: 20px;
-    }
-
-    .about-container {
-        margin: 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 50px 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    
-    .about-container img {
-        max-width: 100%;
-        border-radius: 5px;
-        margin-bottom: 20px;
-    }
-    
-    .about {
-        max-width: 100%;
-        padding: 0 20px;
-        text-align: center;
-    }
-    
-    .about-container p {
-        padding-top: 10px;
-        text-align: justify;
-    }
+    /* about.html styles */
+.about-container {
+    margin: 50px;
+}
 }
