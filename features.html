@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Midterm</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <div class="container">
-        <header class="header">
+        <!-- Skip links -->
+        <a href="#main-content" class="skip-link">Skip to Main Content</a>
+        <a href="#nav" class="skip-link">Skip to Navigation</a>
+
+        <header class="header" role="navigation" id="nav">
             <!-- Creating div for Navigation List -->
             <div class="nav">
                 <a href="index.html">
@@ -27,6 +33,46 @@
                 </nav>
             </div>
         </header>
+
+        <main class="main-content" id="main-content">
+            <div class="feature-container">
+                <div class="featureslist">
+                    <h2>Our Features</h2>
+                    <dl>
+                        <dt>Powerful online protection:</dt>
+                        <dd>Our VPN service employs robust encryption protocols and advanced security measures to
+                            safeguard
+                            your
+                            online activities, ensuring that your sensitive data remains secure from hackers and prying
+                            eyes.
+                        </dd>
+                        <dt>Internet without borders:</dt>
+                        <dd>With our VPN, you can bypass geo-restrictions and access websites and content from around
+                            the
+                            globe,
+                            enjoying unrestricted internet access regardless of your physical location. Say goodbye to
+                            censorship and
+                            explore the web freely.</dd>
+
+                        <dt>Supercharged VPN:</dt>
+                        <dd>Experience lightning-fast connection speeds and seamless browsing with our optimized VPN
+                            network,
+                            engineered to deliver unparalleled performance and reliability for your online activities.
+                        </dd>
+
+                        <dt>No specific time limits:</dt>
+                        <dd>Enjoy unlimited access to our VPN service without any time constraints, allowing you to
+                            browse,
+                            stream,
+                            and connect at your convenience without worrying about usage restrictions or limitations.
+                        </dd>
+                    </dl>
+                </div>
+                <div class="vpnfeatures">
+                    <img src="images/image1_0.jpg" alt="">
+                </div>
+            </div>
+        </main>
 
         <footer class="footer">
             <div class="left-column">
@@ -71,6 +117,7 @@
             </div>
         </footer>
     </div>
-    
+
 </body>
+
 </html>

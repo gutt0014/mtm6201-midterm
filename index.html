@@ -8,11 +8,15 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body itemscope itemtype="http://schema.org/Organization">
     <div class="container">
-        <header class="header">
+        <!-- Skip links -->
+      <a href="#main-content" class="skip-link">Skip to Main Content</a>
+      <a href="#nav" class="skip-link">Skip to Navigation</a>
+    
+        <header class="header" id="nav">
             <!-- Creating div for Navigation List -->
-            <div class="nav">
+            <div class="nav" role="navigation">
                 <a href="index.html">
                     <img class="home-button" src="images/Logo.png" alt="">
                 </a>
@@ -30,9 +34,9 @@
             </div>
         </header>
 
-        <main class="main-content">
+        <main class="main-content" id="main-content">
             <!-- creating div for Banner -->
-            <div class="banner">
+            <div class="banner" role="banner">
                 <div class="banner-content">
                     <h1>Want anything to be easy with LaslesVPN.</h1>
                     <p>Provide a network for all your needs with ease and fun using LaslesVPN discover interesting
@@ -42,7 +46,7 @@
                 </div>
                 <img src="images/Illustration1.png" alt="">
             </div>
-            <div class="uls-icons">
+            <div class="uls-icons" role="complementary">
                 <img src="images/users.png" alt="">
                 <div>
                     <h3>90+</h3>
@@ -61,8 +65,8 @@
             </div>
 
             <!-- creating features section-->
-            <section class="features-section">
-                <div class="features">
+            <section class="features-section" role="region">
+                <div class="features" role="region">
                     <img src="images/Illustration2.png" alt="">
                     <div class="features-content">
                         <h2>We Provide Many Features You Can Use</h2>
@@ -80,13 +84,13 @@
             </section>
 
             <!-- creating section to create cards for choose your plan -->
-            <section class="plans">
+            <section class="plans" role="region">
                 <div class="plan-info">
                     <h2>Choose your Plan</h2>
                     <p>Let's choose the package that is best for you and explore it happily and cheerfully.</p>
                 </div>
                 <div class="plan-cards">
-                    <div class="plan-card">
+                    <div class="plan-card" role="article">
                         <img src="images/Premium.png" alt="">
                         <h3>Free Plan</h3>
                         <ul>
@@ -98,7 +102,7 @@
                         <p>Free</p>
                         <button type="button" class="select-button">Select</button>
                     </div>
-                    <div class="plan-card">
+                    <div class="plan-card" role="article">
                         <img src="images/Premium.png" alt="">
                         <h3>Standard Plan</h3>
                         <ul>
@@ -111,7 +115,7 @@
                         <p>$9/mo</p>
                         <button type="button" class="select-button">Select</button>
                     </div>
-                    <div class="plan-card">
+                    <div class="plan-card" role="article">
                         <img src="images/Premium.png" alt="">
                         <h3>Premium Plan</h3>
                         <ul>
@@ -129,7 +133,7 @@
             </section>
 
             <!-- creating network section -->
-            <section class="network-section">
+            <section class="network-section" role="region">
                 <div class="network">
                     <h2>Huge Global Network <br>of fast VPN</h2>
                     <p>See LaslesVPN everywhere to make it easier for you when you move locations.</p>
@@ -139,9 +143,8 @@
             </section>
 
 
-            <!-- creating testiomonial section -->
-            <div class="testimonial-container">
-
+            <!-- creating testimonial section -->
+            <div class="testimonial-container" role="region">
                 <div class="testimonial-heading">
                     <h2>Trusted by Thousands of Happy Customer</h2>
                     <p>These are the stories of customers who have joined us with great pleasure when using this
@@ -149,7 +152,7 @@
                 </div>
 
                 <div class="testimonial-cards">
-                    <section class="testimonial-card">
+                    <section class="testimonial-card" role="article">
                         <div class="card-content">
                             <img class="profile" src="images/Ellipse175.png" alt="">
                             <h4>Viezh Robert</h4>
@@ -161,7 +164,7 @@
                         </div>
                     </section>
                 
-                    <section class="testimonial-card">
+                    <section class="testimonial-card" role="article">
                         <div class="card-content">
                             <img class="profile" src="images/Ellipse175(1).png" alt="">
                             <h4>Yessica Christy</h4>
@@ -173,7 +176,7 @@
                         </div>
                     </section>
                 
-                    <section class="testimonial-card">
+                    <section class="testimonial-card" role="article">
                         <div class="card-content">
                             <img class="profile" src="images/Ellipse175(2).png" alt="">
                             <h4>Kim Young Jou</h4>
@@ -188,7 +191,7 @@
             </div>
 
             <!-- creating subscribe section -->
-            <section class="subscribe-section">
+            <section class="subscribe-section" role="region">
                 <div class="subscribe">
                     <h3>Subscribe Now for<br>Get Special Features</h3>
                     <p>Let's subscribe with us and find the fun.</p>
@@ -198,14 +201,14 @@
         </main>
 
         <!-- creating footer section -->
-        <footer class="footer">
+        <footer class="footer" role="contentinfo">
             <div class="left-column">
                 <img src="images/Logo.png" alt="">
                 <p>LaslesVPN is a private virtual network<br>that has unique features and has high security.</p>
                 <img src="images/Facebook.png" alt="">
                 <img src="images/Twitter.png" alt="">
                 <img src="images/Instagram.png" alt="">
-                <p>Copyright &copy; 2020 LaslesVPN</p>
+                <p>Copyright &copy; 2024 LaslesVPN</p>
             </div>
 
             <div class="footer-links">
