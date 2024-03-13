@@ -1,4 +1,5 @@
 /* Global Styles */
+/* Setting default styles for all pages */
 html {
     font-family: 'Open Sans', sans-serif;
     background-color: #fff;
@@ -39,6 +40,7 @@ p {
     font-size: 16px;
 }
 
+/* Creating skip links for accessibility */
 .skip-link {
     position: absolute;
     top: -40px;
@@ -49,7 +51,6 @@ p {
     z-index: 1000;
     text-decoration: none;
 }
-
 
 .skip-link:focus {
     top: 0;
@@ -73,6 +74,7 @@ p {
     font-size: 18px;
 }
 
+/* Creating a hover and focus to identify which item them are on */
 .nav a:hover {
     color: #DA0B0B;
 }
@@ -108,6 +110,7 @@ p {
 }
 
 /* Styling Sign In & Sign Up buttons */
+/* Adding  hover and focus to identify which item them are on */
 .si-button {
     background-color: transparent;
     border: none;
@@ -142,6 +145,7 @@ p {
     background-color: #DB00A1;
 }
 
+/* Adding an animation on the logo to show that it is clickable */
 .home-button {
     transition: transform 0.3s ease;
 }
@@ -184,6 +188,7 @@ p {
     box-shadow: 0 5px 15px #DA0B0B;
 }
 
+/* Adding a hover and focus to identify which item them are on */
 .gs-button:hover {
     background-color: #FFF;
     color: #DA0B0B;
@@ -309,6 +314,7 @@ p {
     color: #DA0B0B;
 }
 
+/* Adding a hover and focus to identify which item them are on */
 .select-button:hover {
     color: #FFF;
     background-color: #DA0B0B;
@@ -428,6 +434,7 @@ p {
     height: 40px;
 }
 
+/* Adding a hover and focus to identify which item them are on */
 .sub-button:hover {
     color: #DA0B0B;
     background-color: #FFF;
@@ -527,7 +534,43 @@ dd {
     padding-left: 25%;
 }
 
-/* CSS for smaller screens */
+/* Animation for banner content */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.banner-content {
+    flex: 1;
+    padding: 0 20px;
+    animation: fadeIn 1s ease forwards;
+}
+
+/* Animation for network images */
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.network img {
+    margin-top: 40px;
+    animation: slideUp 1s ease forwards;
+}
+
+
+/* Creaint a media querie to make the website respsonive to smaller screens */
 @media only screen and (max-width: 768px) {
 
     /* Adjusting global font sizes */
@@ -647,7 +690,7 @@ dd {
     }
 
     /* about.html styles */
-.about-container {
-    margin: 50px;
-}
+    .about-container {
+        margin: 50px;
+    }
 }
